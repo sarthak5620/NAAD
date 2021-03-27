@@ -1,4 +1,4 @@
-package task0;
+package task0.introduction;
 
 import java.util.Scanner;
 

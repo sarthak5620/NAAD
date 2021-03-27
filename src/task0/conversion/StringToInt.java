@@ -1,13 +1,13 @@
-package task0;
+package task0.conversion;
 
 import java.util.Scanner;
 
-public class EmptyOrNullString {
+public class StringToInt {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the string");
         String str = sc.nextLine();
-        if (str == null || str.trim().isEmpty()) System.out.println("string is null or empty");
-        else System.out.println("String is not null");
+        long n1 = Integer.parseInt(str);
+        System.out.println("Int value of given String is" + n1);
     }
 }

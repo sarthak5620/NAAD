@@ -1,4 +1,4 @@
-package task0;
+package task0.introduction;
 
 public class Helloworld {
     public static void main(String[] args) {
