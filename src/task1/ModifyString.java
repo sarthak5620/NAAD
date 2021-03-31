@@ -5,7 +5,7 @@ import java.util.Scanner;
 class InvalidReplacementException extends Exception{
     @Override
     public String toString() {
-        return super.toString()+"Invalid Replacement Exception";
+        return super.toString();
     }
 }
 public class ModifyString {
