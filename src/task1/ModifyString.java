@@ -2,6 +2,12 @@ package task1;
 
 import java.util.Scanner;
 
+class InvalidReplacementException extends Exception{
+    @Override
+    public String toString() {
+        return super.toString()+"Invalid Replacement Exception";
+    }
+}
 public class ModifyString {
     public static String StringModify(String string ,String replacements){
         char[] array = new char[10];
@@ -24,6 +30,17 @@ public class ModifyString {
         String string = sc.nextLine();
         System.out.println("Enter the replacing string");
         String replacements = sc.nextLine();
-        System.out.println("The modified string is: " + StringModify(string, replacements));
+        String regex = "([0-9][A-Z])*$";
+        if(replacements.matches(regex)){
+            System.out.println("The modified string is: " + StringModify(string, replacements));
+        }
+        else{
+            try{
+                throw new InvalidReplacementException();
+            }catch(Exception e){
+                e.printStackTrace();
+            }
+        }
+
     }
 }
