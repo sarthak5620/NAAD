@@ -45,7 +45,7 @@ class SpecialProduct extends Product{
     }
 }
 
-public class Main {
+public class MainTask3_1 {
     public static void main(String[] args) {
         Product Chocolate = new Product("Kitkat", 100);
         Product Chocolate1 = new Product("DairyMilk", 100);

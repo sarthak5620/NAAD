@@ -50,11 +50,11 @@ class Cart{
     public String toString(){
        StringBuilder sb = new StringBuilder();
 
-       sb.append("Cart{" + "\n\tgroceryCartItems = {");
+       sb.append("Cart{" + "\n\tgroceryCartItems = [");
        for (GroceryCartItem cartItem : cartItems) {
            sb.append("\n\t" + cartItem.toString() + ",");
        }
-       sb.append("\n\t" +
+       sb.append("\n\t]," +
                "\ttotalAmount = ₹" + this.totalAmount +
                "}");
        return sb.toString();
